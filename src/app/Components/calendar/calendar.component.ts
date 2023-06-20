@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MeetingOnTimeService } from '../../Services/calendar.service';
+import { CalendarService } from 'src/app/Services/calendar.service';
 
 @Component({
   selector: 'app-calendar',
@@ -10,9 +10,9 @@ export class CalendarComponent {
   currentMonth: string;
   calendar: Array<string[]>;
 
-  meetingOnTimeService!: MeetingOnTimeService;
+  calendarService!: CalendarService;
 
-  constructor(meetingOnTimeService: MeetingOnTimeService) {
+  constructor(calendarService: CalendarService) {
     const today = new Date();
     const monthNames = [
       'Janvier',
@@ -29,8 +29,8 @@ export class CalendarComponent {
       'Décembre',
     ];
     this.currentMonth = monthNames[today.getMonth()];
-    this.meetingOnTimeService = meetingOnTimeService;
+    this.calendarService = calendarService;
 
-    this.calendar = this.meetingOnTimeService.getCalendar();
+    this.calendar = this.calendarService.getCalendar();
   }
 }
