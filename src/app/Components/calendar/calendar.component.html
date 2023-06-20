@@ -1,0 +1,27 @@
+<div class="mainCalendarContainer">
+  <div class="calendarContainer">
+    <div class="header">
+      <h2>{{ currentMonth }}</h2>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Lundi</th>
+          <th>Mardi</th>
+          <th>Mercredi</th>
+          <th>Jeudi</th>
+          <th>Vendredi</th>
+          <th>Samedi</th>
+          <th>Dimanche</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let week of calendar">
+          <td *ngFor="let day of week">
+            <div class="day">{{ day }}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
