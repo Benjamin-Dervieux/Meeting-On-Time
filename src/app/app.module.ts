@@ -9,6 +9,7 @@ import { CalendarComponent } from './Components/calendar/calendar.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { FormRdvComponent } from './Components/formRdv/form-rdv/form-rdv.component';
+import { PopUpComponent } from './pop-up/pop-up.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FormRdvComponent } from './Components/formRdv/form-rdv/form-rdv.compone
     FooterComponent,
     CalendarComponent,
     FormRdvComponent,
+    PopUpComponent,
   ],
   imports: [
     BrowserModule, 
