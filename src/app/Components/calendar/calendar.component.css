@@ -3,18 +3,20 @@
   justify-content: center;
 }
 
-.calendarContainer {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
+.calendar {
+  width: 60%;
+  height: 45rem;
+  background-color: #fff;
+  padding: 10px;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
   color: #006494;
   font-size: 1.5em;
-  margin-bottom: 1rem;
 }
 
 .previousMonthBtn {
@@ -22,11 +24,13 @@
   background-color: white;
   margin-right: 3rem;
   cursor: pointer;
+  border: 0.5px solid #006494;
+  border-radius: 50%;
 }
 
 .previousMonthBtn img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   transform: rotate(180deg);
 }
 
@@ -35,34 +39,64 @@
   background-color: white;
   margin-left: 3rem;
   cursor: pointer;
+  border: 0.5px solid #006494;
+  border-radius: 50%;
 }
 
 .nextMonthBtn img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-.calendarContainer th {
-  height: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border-radius: 10px;
+.weekdayContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.weekday {
+  flex-basis: calc(100% / 7);
+  text-align: center;
+  font-weight: bold;
   color: #006494;
+}
+
+.days {
+  display: grid;
+  grid-template: repeat(7, 1fr);
+}
+
+.week {
+  display: flex;
+  flex-basis: calc(100% / 7);
+  justify-content: center;
+  gap: 30px;
 }
 
 .day {
+  width: 8rem;
+  height: 8rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
   border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  width: 10rem;
-  height: 10rem;
-  margin-top: 1rem;
-  margin-left: 1.7rem;
-  color: #006494;
-  cursor: pointer;
 }
 
 .day:hover {
+  background-color: #f2f2f2;
+}
+.selected {
   background-color: #006494;
   color: whitesmoke;
+}
+
+.prev-month {
+  color: #999;
 }
