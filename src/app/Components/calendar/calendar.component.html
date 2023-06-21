@@ -1,34 +1,41 @@
 <div class="mainCalendarContainer">
-  <div class="calendarContainer">
+  <div class="calendar">
     <div class="header">
-      <button class="previousMonthBtn" (click)="previousMonth()">
+      <button
+        class="previousMonthBtn"
+        (click)="calendarService.previousMonth()"
+      >
         <img src="../../../assets/images/next.png" alt="previous arrow" />
       </button>
-      <h2>{{ currentMonth }}</h2>
-      <button class="nextMonthBtn" (click)="nextMonth()">
+      <h2>
+        {{ calendarService.currentMonthName }} {{ calendarService.currentYear }}
+      </h2>
+      <button class="nextMonthBtn" (click)="calendarService.nextMonth()">
         <img src="../../../assets/images/next.png" alt="next arrow" />
       </button>
     </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Lundi</th>
-          <th>Mardi</th>
-          <th>Mercredi</th>
-          <th>Jeudi</th>
-          <th>Vendredi</th>
-          <th>Samedi</th>
-          <th>Dimanche</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let week of calendar">
-          <td *ngFor="let day of week">
-            <div class="day">{{ day }}</div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="weekdayContainer">
+      <div class="weekday" *ngFor="let weekday of calendarService.weekdays">
+        {{ weekday }}
+      </div>
+    </div>
+    <div class="days">
+      <div *ngFor="let week of calendarService.calendar">
+        <div class="week">
+          <div
+            class="day"
+            *ngFor="let day of week"
+            [ngClass]="{
+              'prev-month': day.month !== calendarService.currentMonth,
+              today: calendarService.isToday(day.date),
+              selected: calendarService.isSelected(day.date)
+            }"
+            (click)="selectDate(day.date)"
+          >
+            {{ day.date }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
