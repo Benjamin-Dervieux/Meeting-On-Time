@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-rdv.component.css']
 })
 export class FormRdvComponent {
+  title :string;
 
-  constructor(){}
+
+  constructor(){
+    this.title = "Réserver un créneau horaire"
+  }
 
   // interface Rdv {
     
