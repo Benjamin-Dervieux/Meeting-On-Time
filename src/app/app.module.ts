@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CalendarComponent } from './Components/calendar/calendar.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { FormRdvComponent } from './formRdv/form-rdv/form-rdv.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FooterComponent } from './Components/footer/footer.component';
     HeaderComponent,
     FooterComponent,
     CalendarComponent,
+    FormRdvComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
