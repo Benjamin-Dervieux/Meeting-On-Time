@@ -10,8 +10,36 @@
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: #006494;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.previousMonthBtn {
+  border: none;
+  background-color: white;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.previousMonthBtn img {
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(180deg);
+}
+
+.nextMonthBtn {
+  border: none;
+  background-color: white;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.nextMonthBtn img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .calendarContainer th {
@@ -31,6 +59,7 @@
   margin-top: 1rem;
   margin-left: 1.7rem;
   color: #006494;
+  cursor: pointer;
 }
 
 .day:hover {

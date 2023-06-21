@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #0582CA;
+    color: white;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .right-section a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .right-section a:hover {
+    text-decoration: underline;
+  }
+
+  .right-section a:active {
+    color: black;
+  }
