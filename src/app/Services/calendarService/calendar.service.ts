@@ -1,58 +1,127 @@
 import { Injectable } from '@angular/core';
 
+interface Day {
+  date: number;
+  month: number;
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class CalendarService {
-  currentMonth: string;
-  someOtherProperty: any;
-  monthNames: string[] = [
-    'Janvier',
-    'Février',
-    'Mars',
-    'Avril',
-    'Mai',
-    'Juin',
-    'Juillet',
-    'Août',
-    'Septembre',
-    'Octobre',
-    'Novembre',
-    'Décembre',
+  weekdays: string[] = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
   ];
-  calendar: Array<string[]> = [
-    ['1', '2', '3', '4', '5', '6', '7'],
-    ['8', '9', '10', '11', '12', '13', '14'],
-    ['15', '16', '17', '18', '19', '20', '21'],
-    ['22', '23', '24', '25', '26', '27', '28'],
-    ['29', '30', '31'],
-  ];
+  currentMonth: number;
+  currentYear: number;
+  currentMonthName: string;
+  calendar: Day[][];
+  selectedDate: number | null;
 
   constructor() {
-    const today = new Date();
-    this.currentMonth = this.monthNames[today.getMonth()];
+    const currentDate = new Date();
+    this.currentMonth = currentDate.getMonth();
+    this.currentYear = currentDate.getFullYear();
+    this.currentMonthName = this.getMonthName(this.currentMonth);
+    this.calendar = this.generateCalendar(this.currentMonth, this.currentYear);
+    this.selectedDate = null;
   }
 
-  setCurrentMonth(month: string) {
-    this.currentMonth = month;
-  }
-
-  //==================================METHOD TO DISPLAY CALENDAR=============================
-  getCalendar(): Array<string[]> {
-    return this.calendar;
-  }
-
-  //===================================METHOD FOR PREVIOUS MONTH================================
   previousMonth() {
-    const currentMonthIndex = this.monthNames.indexOf(this.currentMonth);
-    const previousMonthIndex =
-      (currentMonthIndex - 1 + this.monthNames.length) % this.monthNames.length;
-    this.currentMonth = this.monthNames[previousMonthIndex];
+    this.currentMonth--;
+    if (this.currentMonth < 0) {
+      this.currentMonth = 11;
+      this.currentYear--;
+    }
+    this.currentMonthName = this.getMonthName(this.currentMonth);
+    this.calendar = this.generateCalendar(this.currentMonth, this.currentYear);
+    this.selectedDate = null;
   }
-  //===================================METHOD FOR NEXT MONTH====================================
+
   nextMonth() {
-    const currentMonthIndex = this.monthNames.indexOf(this.currentMonth);
-    const nextMonthIndex = (currentMonthIndex + 1) % this.monthNames.length;
-    this.currentMonth = this.monthNames[nextMonthIndex];
+    this.currentMonth++;
+    if (this.currentMonth > 11) {
+      this.currentMonth = 0;
+      this.currentYear++;
+    }
+    this.currentMonthName = this.getMonthName(this.currentMonth);
+    this.calendar = this.generateCalendar(this.currentMonth, this.currentYear);
+    this.selectedDate = null;
+  }
+
+  generateCalendar(month: number, year: number): Day[][] {
+    const firstDayOfMonth = new Date(year, month, 1).getDay();
+    const numDays = new Date(year, month + 1, 0).getDate();
+
+    const calendar: Day[][] = [];
+    let week: Day[] = [];
+
+    const previousMonthLastDate = new Date(year, month, 0).getDate();
+    const startDay = (firstDayOfMonth - 1 + 7) % 7;
+    for (let i = startDay; i >= 0; i--) {
+      const date = previousMonthLastDate - (startDay - i);
+      week.push({ date, month: month - 1 });
+    }
+
+    for (let i = 1; i <= numDays; i++) {
+      week.push({ date: i, month });
+      if (week.length === 7) {
+        calendar.push(week);
+        week = [];
+      }
+    }
+
+    let nextMonthDate = 1;
+    while (week.length < 7) {
+      week.push({ date: nextMonthDate, month: month + 1 });
+      nextMonthDate++;
+    }
+
+    calendar.push(week);
+
+    return calendar;
+  }
+
+  getMonthName(month: number): string {
+    const monthNames = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
+    return monthNames[month];
+  }
+
+  isToday(date: number): boolean {
+    const today = new Date();
+    return (
+      date === today.getDate() &&
+      this.currentMonth === today.getMonth() &&
+      this.currentYear === today.getFullYear()
+    );
+  }
+
+  isSelected(date: number): boolean {
+    return date === this.selectedDate;
+  }
+
+  selectDate(date: number): void {
+    if (date !== -1) {
+      this.selectedDate = date;
+    }
   }
 }
