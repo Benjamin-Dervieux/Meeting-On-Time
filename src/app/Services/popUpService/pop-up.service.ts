@@ -5,13 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class PopUpService {
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   openPopUp () {
     
   }
 
   closePopUp(){
-    
+
   }
 }
