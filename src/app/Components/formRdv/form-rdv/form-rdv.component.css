@@ -1,0 +1,23 @@
+.formRdv {
+    display: flex; 
+    flex-direction: column;
+    border: 1px solid black; /* mise en evidence de la div */
+    height: auto;
+    width: 33%;
+      
+}
+
+.containerSelectTime {
+    display: flex;
+    flex-direction: row;
+    margin: 0.75rem;
+}
+
+.button {
+    
+}
+
+.actionBar {
+    display: flex;
+    flex-direction: row;
+}
