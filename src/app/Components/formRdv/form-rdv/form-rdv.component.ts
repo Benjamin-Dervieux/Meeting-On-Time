@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { FormRdvService } from 'src/app/Services/formRdVService/form-rdv.service';
 
 @Component({
   selector: 'app-form-rdv',
@@ -11,9 +12,15 @@ export class FormRdvComponent {
   title : string;
   choiceHour : boolean;
 
-  constructor(){ 
+  formRdvService = FormRdvService;
+
+  constructor(formRdvService : FormRdvService){
+
+    this.formRdvService = formRdvService;  
+    
     this.title = "Réserver un créneau horaire";
-    this.choiceHour = false ; // t    
+
+    this.choiceHour = false ;     
   }
 
   formRdv = new FormGroup({
@@ -28,4 +35,10 @@ export class FormRdvComponent {
       this.choiceHour = !this.choiceHour; 
     }
   }
+
+  onSubmitted() {
+    //this.formRdvService.onSubmitted(this.formRdv.value)
+    //this.formRdvEvent.emit(this.formRdv.value)
+  }
+
 }

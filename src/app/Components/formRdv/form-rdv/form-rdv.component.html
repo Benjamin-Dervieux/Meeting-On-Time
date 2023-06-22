@@ -1,7 +1,7 @@
-<form id="FormRdv" class="formRdv">
-    
+<form  id="FormRdv" class="formRdv" [formGroup]="formRdv" (submit)="onSubmitted()"> 
+
     <h2>{{title}}</h2>
-    <input type="text" name="rdvTitle" id="RdvTitle" class="rdvTitle" placeholder="Intitulé du rendez vous." required/>
+    <input type="text" name="rdvTitle" id="RdvTitle" class="rdvTitle" placeholder="Intitulé du rendez vous." required formControlName="rdvTitle"/>
 
     
     <div id="ContainerSelectTime" class="containerSelectTime">
@@ -10,24 +10,24 @@
         <div class="timeSlotDefine">
             <label for="timeSlotStart">Début du créneau:</label>
             <input type="time" id="timeSlotStart" name="timeSlotStart"
-       min="09:00" max="18:00" required>
+       min="09:00" max="18:00" required formControlName="timeSlotStart">
         </div>
 
        <div class="timeSlotDefine">
             <label for="timeSlotStart">Début du créneau:</label>
             <input type="time" id="timeSlotFinish" name="timeSlotFinish"
-       min="09:00" max="18:00" required>
+       min="09:00" max="18:00" required formControlName="timeSlotEnd">
         </div>
 
         <button type="button" name="selectfTime" id="SelectfTime" class="button" >Choix de l'Heure </button>
     </div>
     
-    <textarea name="descriptionRdv" id="DescriptionRdv" class="descriptionRdv" cols="30" rows="10" placeholder="Descriptif de votre Rendez-vous"></textarea>
+    <textarea name="descriptionRdv" id="DescriptionRdv" class="descriptionRdv" cols="30" rows="10" placeholder="Descriptif de votre Rendez-vous" formControlName="descriptionRdv"></textarea>
 
     <div id="actionBar" class="actionBar">
         <button type="button" name="modifyRdv" id="ModifyRdv" class="button"> Modifications </button>
         <button type="button" name="DeleteRdv" id="DeleteRdv" class="button"> Suppression </button>
-        <button type="button" name="validationRdv" id="ValidationRdv" class="button"> Validation </button>
+        <button type="submit" name="validationRdv" id="ValidationRdv" class="button"> Validation </button>
     </div>
 
 </form>
