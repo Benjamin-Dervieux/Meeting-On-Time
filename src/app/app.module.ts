@@ -11,7 +11,7 @@ import { PopUpComponent } from './Components/pop-up/pop-up.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { LoginComponent } from './Components/login/login.component';
 import { FormLoginComponent } from './Components/form-login/form-login.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,12 +25,7 @@ import { FormLoginComponent } from './Components/form-login/form-login.component
     LoginComponent,
     FormLoginComponent,
   ],
-  imports: [
-    BrowserModule, 
-    AppRoutingModule,
-    FormsModule, 
-    ReactiveFormsModule],
-
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
 
   providers: [],
   bootstrap: [AppComponent],
