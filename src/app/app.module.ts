@@ -12,6 +12,7 @@ import { PopUpComponent } from './Components/pop-up/pop-up.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { LoginComponent } from './Components/login/login.component';
 import { FormLoginComponent } from './Components/form-login/form-login.component';
+import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormLoginComponent } from './Components/form-login/form-login.component
     ContactComponent,
     LoginComponent,
     FormLoginComponent,
+    FormTestRdvComponent,
   ],
 
   imports: [
