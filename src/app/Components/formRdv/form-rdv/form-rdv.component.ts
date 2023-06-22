@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormArray, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-form-rdv',
@@ -6,15 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-rdv.component.css']
 })
 export class FormRdvComponent {
-  title :string;
+  //init title Form >> recevra le nom du form en fonction de l'appel.
+  title : string;
 
+  constructor(){ 
 
-  constructor(){
-    this.title = "Réserver un créneau horaire"
+    this.title = "Réserver un créneau horaire";
+  
   }
 
-  // interface Rdv {
-    
-  // }
-
+  formRdv = new FormGroup({
+    rdvTitle: new FormControl(''),
+    timeSlotStart: new FormControl(''),
+    timeSlotEnd : new FormControl (''),
+    descriptionRdv : new FormControl ('')
+  })
+ 
 }
