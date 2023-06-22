@@ -9,11 +9,11 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
 export class FormRdvComponent {
   //init title Form >> recevra le nom du form en fonction de l'appel.
   title : string;
+  choiceHour : boolean;
 
   constructor(){ 
-
     this.title = "Réserver un créneau horaire";
-  
+    this.choiceHour = false ; // t    
   }
 
   formRdv = new FormGroup({
@@ -23,4 +23,9 @@ export class FormRdvComponent {
     descriptionRdv : new FormControl ('')
   })
  
+  activeChoiceHour () : void {
+    if (!this.choiceHour) {
+      this.choiceHour = !this.choiceHour; 
+    }
+  }
 }
