@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class PopUpService {
 
+  let popUpStatu : boolean = false; 
+
   constructor() { 
     
   }
@@ -16,4 +18,20 @@ export class PopUpService {
   closePopUp(){
 
   }
+// let modalAlreadyShowed = false
+
+// window.addEventListener('scroll', function(e) {
+//   if( ! modalAlreadyShowed ) {
+//     setTimeout( () => {
+//       document.getElementById('modal').style.display = 'block'
+//     }, 2000 )
+//     modalAlreadyShowed = true
+//   }
+// });
+
+// document.getElementById('modal-close').addEventListener('click', function(e) {
+//   document.getElementById('modal').style.display = 'none'
+// })
+
 }
+
