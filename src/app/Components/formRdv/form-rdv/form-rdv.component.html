@@ -1,7 +1,20 @@
+<<<<<<< HEAD
 <form  id="FormRdv" class="formRdv" [formGroup]="formRdv" (submit)="onSubmitted()"> 
 
     <h2>{{title}}</h2>
     <input type="text" name="rdvTitle" id="RdvTitle" class="rdvTitle" placeholder="Intitulé du rendez vous." required formControlName="rdvTitle"/>
+=======
+<form id="FormRdv" class="formRdv">
+  <h2>{{ title }}</h2>
+  <input
+    type="text"
+    name="rdvTitle"
+    id="RdvTitle"
+    class="rdvTitle"
+    placeholder="Intitulé du rendez vous."
+    required
+  />
+>>>>>>> 5cf19c1f3fa6ecb11a29f9c715e03b870adddaaf
 
     
     <div id="ContainerSelectTime" class="containerSelectTime">
@@ -19,6 +32,7 @@
        min="09:00" max="18:00" required formControlName="timeSlotEnd">
         </div>
 
+<<<<<<< HEAD
         <button type="button" name="selectfTime" id="SelectfTime" class="button" >Choix de l'Heure </button>
     </div>
     
@@ -28,7 +42,61 @@
         <button type="button" name="modifyRdv" id="ModifyRdv" class="button"> Modifications </button>
         <button type="button" name="DeleteRdv" id="DeleteRdv" class="button"> Suppression </button>
         <button type="submit" name="validationRdv" id="ValidationRdv" class="button"> Validation </button>
+=======
+
+    <div class="timeSlotDefine">
+      <label for="timeSlotStart">Début du créneau:</label>
+      <input
+        type="time"
+        id="timeSlotStart"
+        name="timeSlotStart"
+        min="09:00"
+        max="18:00"
+        required
+      />
+>>>>>>> 5cf19c1f3fa6ecb11a29f9c715e03b870adddaaf
     </div>
 
-</form>
+    <div class="timeSlotDefine">
+      <label for="timeSlotStart">Début du créneau:</label>
+      <input
+        type="time"
+        id="timeSlotFinish"
+        name="timeSlotFinish"
+        min="09:00"
+        max="18:00"
+        required
+      />
+    </div>
 
+    <button type="button" name="selectfTime" id="SelectfTime" class="button">
+      Choix de l'Heure
+    </button>
+  </div>
+
+  <textarea
+    name="descriptionRdv"
+    id="DescriptionRdv"
+    class="descriptionRdv"
+    cols="30"
+    rows="10"
+    placeholder="Descriptif de votre Rendez-vous"
+  ></textarea>
+
+  <div id="actionBar" class="actionBar">
+    <button type="button" name="modifyRdv" id="ModifyRdv" class="button">
+      Modifications
+    </button>
+    <button type="button" name="DeleteRdv" id="DeleteRdv" class="button">
+      Suppression
+    </button>
+    <button
+      type="button"
+      name="validationRdv"
+      id="ValidationRdv"
+      class="button"
+    >
+      Validation
+    </button>
+  </div>
+</form>
