@@ -1,6 +1,16 @@
-# //MeetingOnTime
+# MeetingOnTime.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+
+This project is an calendar application on TyeScript Language & ANGULAR framework.
+
+This fonctionnalities are : 
+
+* making an appointement on graphic interface by Users,
+* manage appointements & disponibilties by the Administrator, 
+* auto send the notifications (mails, on screen and by phone) to User & administrator when a appointement is create, modified or delete.
+
+Developped by : Benjamin, Majdi, Quentin.
 
 ## Development server
 
