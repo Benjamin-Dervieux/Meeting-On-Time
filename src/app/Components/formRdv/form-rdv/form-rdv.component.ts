@@ -37,7 +37,7 @@ export class FormRdvComponent {
   }
 
   onSubmitted() {
-    //this.formRdvService.onSubmitted(this.formRdv.value)
+    //this.formRdvService.addRdv(this.formRdv.value)
     //this.formRdvEvent.emit(this.formRdv.value)
   }
 
