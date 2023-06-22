@@ -1,0 +1,48 @@
+h2 {
+    display: flex; 
+    justify-content: center;
+    background-color: #006494;
+    color: white;
+
+}
+
+.formRdv {
+    display: flex; 
+    flex-direction: column;
+    /* border: 1px solid black; mise en evidence de la div */
+    height: auto;
+    width: 33%;
+    margin: 1rem;
+      
+}
+
+.containerSelectTime {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0.75rem;
+    justify-content: space-between;
+    
+}
+
+.timeSlot {
+    margin: 0.5rem;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #006494;
+    color: white;
+    cursor: pointer;
+    margin: 0.5rem;
+    height: 1.5rem;
+    width: 15rem;
+
+    
+}
+
+.actionBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
