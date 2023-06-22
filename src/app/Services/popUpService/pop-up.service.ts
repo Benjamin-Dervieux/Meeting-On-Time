@@ -1,18 +1,22 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class PopUpService {
 
-  let popUpStatu : boolean = false; 
+  popUpStatu : boolean ; 
 
-  constructor() { 
-    
+  constructor(){ 
+    this.popUpStatu = false;
   }
 
-  openPopUp () {
+  openPopUp (/**eventClick */) {
+    //if (/** !popUpStatu */){}
+      
     
+
   }
 
   closePopUp(){
