@@ -13,16 +13,20 @@ export class FormRdvService {
 
   addRdv(formRdv: any) {
     this.formRdv.push({
+
       rdvTitle : this.formRdv.rdvTitle ,
       timeSlotStart : this.formRdv.timeSlotStart ,
       timeSlotEnd : this.formRdv.timeSlotEnd ,
       descriptionRdv : this.formRdv.descriptionRdv 
+    
     })
   }
 
   updateRdV(rendezvous: Rdv, rdvIndex: number): void {
-    this.rendezvous[rdvIndex].title = rendezvous.rdvTitle
-    this.articles[articleIndex].content = article.content
+    this.rendezvous[rdvIndex].rdvTitle = rendezvous.rdvTitle,
+    this.rendezvous[rdvIndex].timeSlotStart = rendezvous.timeSlotStart,
+    this.rendezvous[rdvIndex].timeSlotEnd = rendezvous.timeSlotEnd,
+
   }
 
   deleteRdv(articleIndex: number): void {
