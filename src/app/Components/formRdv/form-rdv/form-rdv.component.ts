@@ -29,13 +29,13 @@ export class FormRdvComponent {
     timeSlotEnd : new FormControl (''),
     descriptionRdv : new FormControl ('')
   })
- 
+//  
   activeChoiceHour () : void {
     if (!this.choiceHour) {
       this.choiceHour = !this.choiceHour; 
     }
   }
-
+// 
   onSubmitted() {
     //this.formRdvService.addRdv(this.formRdv.value)
     //this.formRdvEvent.emit(this.formRdv.value)

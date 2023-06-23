@@ -5,14 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class FormRdvService {
 
-  rendezvous : Array<any>;
+  rendezVous : Array<any>;
 
   constructor() { 
 
   }
 
   addRdv(formRdv: any) {
-    this.rendezvous.push({
+    this.rendezVous.push({
 
       rdvTitle : this.formRdv.rdvTitle ,
       timeSlotStart : this.formRdv.timeSlotStart ,
@@ -23,14 +23,14 @@ export class FormRdvService {
   }
 
   updateRdV(rendezvous: Rdv, rdvIndex: number): void {
-    this.rendezvous[rdvIndex].rdvTitle = rendezvous.rdvTitle,
-    this.rendezvous[rdvIndex].timeSlotStart = rendezvous.timeSlotStart,
-    this.rendezvous[rdvIndex].timeSlotEnd = rendezvous.timeSlotEnd,
+    this.rendezVous[rdvIndex].rdvTitle = rendezvous.rdvTitle,
+    this.rendezVous[rdvIndex].timeSlotStart = rendezvous.timeSlotStart,
+    this.rendezVous[rdvIndex].timeSlotEnd = rendezvous.timeSlotEnd,
 
   }
 
   deleteRdv(articleIndex: number): void {
-    this.articles.splice(articleIndex, 1)
+    this.rendezVous.splice(articleIndex, 1)
   }
 
  
