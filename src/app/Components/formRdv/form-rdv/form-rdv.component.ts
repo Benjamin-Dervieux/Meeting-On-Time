@@ -33,6 +33,8 @@ export class FormRdvComponent {
   onSubmitted() {
     this.formRdvService.addRdv(this.rdvForm.value)
     // this.formRdvService.emit(this.rdvForm.value)
+    console.log(this.rdvForm.value)
+    console.log(this.formRdvService.rendezVous)
   }
 
 }
