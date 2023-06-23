@@ -1,56 +1,74 @@
-h2 {
-    display: flex; 
-    justify-content: center;
-    background-color: #006494;
-    color: white;
+.formRdvContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
 
+h2 {
+  text-align: center;
+  color: #006494;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+#RdvTitle {
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .formRdv {
-    display: flex; 
-    flex-direction: column;
-    /* border: 1px solid black; mise en evidence de la div */
-    height: auto;
-    width: 33%;
-    margin: 1rem;
-      
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 33%;
+  margin: 1rem;
 }
 
 .containerSelectTime {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin: 0.75rem;
-    justify-content: space-between;
-    align-items: center;
-    
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .timeSlotDefine {
-    display : flex; 
-    flex-direction: column;
-    margin: 0.5rem;
-    /* size: 0.5rem; */
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: #006494;
 }
-/* .timeSlot {
-    margin: 0.5rem;
-} */
-
 
 .button {
-    border-radius: 10px;
-    background-color: #006494;
-    color: white;
-    cursor: pointer;
-    margin: 0.5rem;
-    height: 1.5rem;
-    width: 15rem;
+  border-radius: 0.6em;
+  background: #006494;
+  color: white;
+  cursor: pointer;
+  margin: 0.5rem;
+  height: 2rem;
+  width: 15rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
-    
+textarea {
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
 }
 
 .actionBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
