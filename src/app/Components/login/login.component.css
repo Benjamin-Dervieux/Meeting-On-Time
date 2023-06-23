@@ -1,5 +1,5 @@
 .mainLoginContainer {
-  height: 38rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,8 @@ h1 {
   color: #006494;
 }
 
-form {
+.formRdv {
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
