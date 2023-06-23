@@ -1,4 +1,4 @@
-.mainLoginContainer {
+.mainCreateUserContainer {
   height: 38rem;
   display: flex;
   flex-direction: column;
@@ -88,17 +88,4 @@ button:hover .transition {
 
 button:active {
   transform: scale(0.97);
-}
-
-.otherChoice {
-  width: 25rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 1.5rem;
-}
-
-.otherChoice a {
-  color: #006494;
-  text-decoration: none;
 }
