@@ -20,9 +20,9 @@ export class FormRdvComponent {
   })
 
 
-  formRdvService = FormRdvService;
+  // formRdvService = FormRdvService;
 
-  constructor(formRdvService : FormRdvService){
+  constructor( private formRdvService : FormRdvService){
 
     this.formRdvService = formRdvService;  
     
@@ -31,8 +31,8 @@ export class FormRdvComponent {
   }
  
   onSubmitted() {
-    //this.formRdvService.addRdv(this.formRdv.value)
-    //this.formRdvEvent.emit(this.formRdv.value)
+    this.formRdvService.addRdv(this.rdvForm.value)
+    // this.formRdvService.emit(this.rdvForm.value)
   }
 
 }

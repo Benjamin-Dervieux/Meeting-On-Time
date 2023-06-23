@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './Components/contact/contact.component';
 import { CalendarComponent } from './Components/calendar/calendar.component';
 import { LoginComponent } from './Components/login/login.component';
-import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
+//import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
 import { CreateUserComponent } from './Components/create-user/create-user.component';
 import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
 import { FormRdvComponent } from './Components/formRdv/form-rdv/form-rdv.component';

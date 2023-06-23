@@ -12,7 +12,7 @@ import { PopUpComponent } from './Components/pop-up/pop-up.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { LoginComponent } from './Components/login/login.component';
 import { FormLoginComponent } from './Components/form-login/form-login.component';
-import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
+// import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
 import { RendezVousComponent } from './Components/rendez-vous/rendez-vous.component';
 
 import { CreateUserComponent } from './Components/create-user/create-user.component';
@@ -30,7 +30,7 @@ import { ForgotPasswordComponent } from './Components/forgot-password/forgot-pas
     ContactComponent,
     LoginComponent,
     FormLoginComponent,
-    FormTestRdvComponent,
+    //FormTestRdvComponent,
     CreateUserComponent,
     ForgotPasswordComponent,
     RendezVousComponent,
