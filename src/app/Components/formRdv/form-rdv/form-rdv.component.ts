@@ -19,11 +19,8 @@ export class FormRdvComponent {
     descriptionRdv: new FormControl(''),
   });
 
-  // formRdvService = FormRdvService;
-
   constructor(private formRdvService: FormRdvService) {
     this.formRdvService = formRdvService;
-
     this.title = 'Book a time slot';
   }
 
