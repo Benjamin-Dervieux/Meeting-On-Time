@@ -15,6 +15,7 @@ import { FormLoginComponent } from './Components/form-login/form-login.component
 import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RendezVousComponent } from './Components/rendez-vous/rendez-vous.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     FormLoginComponent,
     FormTestRdvComponent,
+    RendezVousComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
 
