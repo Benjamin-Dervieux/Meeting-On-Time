@@ -12,7 +12,7 @@ export class FormRdvService {
   }
 
   addRdv(formRdv: any) {
-    this.formRdv.push({
+    this.rendezvous.push({
 
       rdvTitle : this.formRdv.rdvTitle ,
       timeSlotStart : this.formRdv.timeSlotStart ,
