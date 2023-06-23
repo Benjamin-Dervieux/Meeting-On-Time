@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,11 +12,9 @@ import { PopUpComponent } from './Components/pop-up/pop-up.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { LoginComponent } from './Components/login/login.component';
 import { FormLoginComponent } from './Components/form-login/form-login.component';
-
 import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { CreateUserComponent } from './Components/create-user/create-user.component';
+import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     FormLoginComponent,
     FormTestRdvComponent,
+    CreateUserComponent,
+    ForgotPasswordComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
 

@@ -1,0 +1,31 @@
+<div class="mainCreateUserContainer">
+  <h1>Sign up</h1>
+
+  <form (submit)="addUser()" [formGroup]="createUserForm" #newUserForm="ngForm">
+    <label for="newUserName">Enter your name</label>
+    <input
+      id="newUserName"
+      type="text"
+      name="newUserName"
+      formControlName="newUserName"
+      placeholder="Your name"
+      required
+    />
+
+    <label for="newUserPassword">Password</label>
+    <input
+      id="newUserPassword"
+      type="text"
+      name="newUserPassword"
+      formControlName="newUserPassword"
+      placeholder="Your password"
+      required
+    />
+
+    <button type="submit">
+      <span class="transition"></span>
+      <span class="gradient"></span>
+      <span class="label">Register</span>
+    </button>
+  </form>
+</div>
