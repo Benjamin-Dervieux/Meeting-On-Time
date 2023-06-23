@@ -22,12 +22,20 @@ h2 {
     align-items: flex-start;
     margin: 0.75rem;
     justify-content: space-between;
+    align-items: center;
     
 }
 
-.timeSlot {
+.timeSlotDefine {
+    display : flex; 
+    flex-direction: column;
     margin: 0.5rem;
+    /* size: 0.5rem; */
 }
+/* .timeSlot {
+    margin: 0.5rem;
+} */
+
 
 .button {
     border-radius: 10px;
