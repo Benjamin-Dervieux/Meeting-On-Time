@@ -6,19 +6,24 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./rendez-vous.component.css']
 })
 export class RendezVousComponent {
+ 
   @Input()
-  title: string;
+  rdvTitle : string;
   @Input()
-  content: string;
+  timeSlotStart : string;
   @Input()
-  comments: Array<any>;
+  timeSlotEnd : string;
+  @Input()
+  descriptionRdv : string; 
   @Input()
   index: number
 
-  constructor() {
-    this.title = 'Default title';
-    this.content = 'Default content';
-    this.comments = []
+
+  constructor() { 
+    this.rdvTitle = 'Defaault title';
+    this.timeSlotStart = 'Defaault title';
+    this.timeSlotEnd = '';
+    this.descriptionRdv= ''; 
     this.index = 0
   }
 }

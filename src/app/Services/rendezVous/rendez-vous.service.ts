@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class RendezVousService {
   rdvTable : Array <any>
   
-
   constructor() { 
     this.rdvTable = [];
   }
