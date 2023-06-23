@@ -8,6 +8,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class ForgotPasswordComponent {
   newPasswordForm = new FormGroup({
+    loginName: new FormControl(''),
     newPassword: new FormControl(''),
   });
 
