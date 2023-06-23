@@ -6,12 +6,13 @@ import { LoginComponent } from './Components/login/login.component';
 import { FormTestRdvComponent } from './form-test-rdv/form-test-rdv.component';
 import { CreateUserComponent } from './Components/create-user/create-user.component';
 import { ForgotPasswordComponent } from './Components/forgot-password/forgot-password.component';
+import { FormRdvComponent } from './Components/formRdv/form-rdv/form-rdv.component';
 
 const routes: Routes = [
   { path: '', component: CalendarComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'formRdv', component: FormTestRdvComponent },
+  { path: 'formRdv', component: FormRdvComponent },
   { path: 'createUser', component: CreateUserComponent },
   { path: 'forgotPassword', component: ForgotPasswordComponent },
 ];

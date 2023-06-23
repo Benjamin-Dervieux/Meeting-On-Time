@@ -8,16 +8,16 @@ export class FormRdvService {
   rendezVous : Array<any>;
 
   constructor() { 
-
+    this.rendezVous = [];
   }
 
   addRdv(formRdv: any) {
     this.rendezVous.push({
 
-      rdvTitle : this.formRdv.rdvTitle ,
-      timeSlotStart : this.formRdv.timeSlotStart ,
-      timeSlotEnd : this.formRdv.timeSlotEnd ,
-      descriptionRdv : this.formRdv.descriptionRdv 
+      rdvTitle : formRdv.rdvTitle ,
+      timeSlotStart : formRdv.timeSlotStart ,
+      timeSlotEnd : formRdv.timeSlotEnd ,
+      descriptionRdv : formRdv.descriptionRdv 
     
     })
   }
@@ -25,9 +25,8 @@ export class FormRdvService {
   updateRdV(rendezvous: Rdv, rdvIndex: number): void {
     this.rendezVous[rdvIndex].rdvTitle = rendezvous.rdvTitle,
     this.rendezVous[rdvIndex].timeSlotStart = rendezvous.timeSlotStart,
-    this.rendezVous[rdvIndex].timeSlotEnd = rendezvous.timeSlotEnd,
-
-  }
+    this.rendezVous[rdvIndex].timeSlotEnd = rendezvous.timeSlotEnd
+   }
 
   deleteRdv(articleIndex: number): void {
     this.rendezVous.splice(articleIndex, 1)
