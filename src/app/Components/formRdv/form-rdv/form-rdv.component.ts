@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormArray, FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { FormRdvService } from 'src/app/Services/formRdVService/form-rdv.service';
 
 @Component({
   selector: 'app-form-rdv',
@@ -8,24 +9,30 @@ import { FormArray, FormControl, FormGroup } from '@angular/forms';
 })
 export class FormRdvComponent {
   //init title Form >> recevra le nom du form en fonction de l'appel.
+  
   title : string;
-  choiceHour : boolean;
-
-  constructor(){ 
-    this.title = "Réserver un créneau horaire";
-    this.choiceHour = false ; // t    
-  }
-
-  formRdv = new FormGroup({
-    rdvTitle: new FormControl(''),
-    timeSlotStart: new FormControl(''),
-    timeSlotEnd : new FormControl (''),
-    descriptionRdv : new FormControl ('')
+  
+  rdvForm = new FormGroup({
+    rdvTitle : new FormControl(''),
+    timeSlotStart : new FormControl(''),
+    timeSlotEnd : new FormControl(''),
+    descriptionRdv : new FormControl('') 
   })
- 
-  activeChoiceHour () : void {
-    if (!this.choiceHour) {
-      this.choiceHour = !this.choiceHour; 
-    }
+
+
+  // formRdvService = FormRdvService;
+
+  constructor( private formRdvService : FormRdvService){
+
+    this.formRdvService = formRdvService;  
+    
+    this.title = "Réserver un créneau horaire";
+         
   }
+ 
+  onSubmitted() {
+    this.formRdvService.addRdv(this.rdvForm.value)
+    // this.formRdvService.emit(this.rdvForm.value)
+  }
+
 }
