@@ -1,1 +1,45 @@
-<p>login works!</p>
+<div class="mainLoginContainer">
+  <h1>Sign in</h1>
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" #connexionForm="ngForm">
+    <label for="userName">User Name</label>
+    <input
+      id="userName"
+      type="text"
+      name="userName"
+      formControlName="userName"
+      placeholder="Your user name"
+      required
+    />
+
+    <label for="password">Password</label>
+    <input
+      id="password"
+      type="text"
+      name="password"
+      formControlName="password"
+      placeholder="Your password"
+      required
+    />
+
+    <button type="submit">
+      <span class="transition"></span>
+      <span class="gradient"></span>
+      <span class="label">Connexion</span>
+    </button>
+  </form>
+
+  <div class="otherChoice">
+    <div>
+      <a routerLink="/createUser">
+        <p>Not Register yet ?</p>
+      </a>
+    </div>
+
+    <div>
+      <a routerLink="/forgotPassword">
+        <p>Forgot your password ?</p>
+      </a>
+    </div>
+  </div>
+</div>
