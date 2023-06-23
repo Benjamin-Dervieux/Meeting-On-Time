@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+//L'INTERFACE DAY EST DEFINI POUR REPRESENTER UNE JOURNÉE DU CALENDRIER
 interface Day {
   date: number;
   month: number;
@@ -9,6 +10,7 @@ interface Day {
   providedIn: 'root',
 })
 export class CalendarService {
+  //DÉFINITION DES DIFFERENTES PROPRIÉTÉS, VARIABLES UTILES POUR LE FONCTIONNEMENT DU SERVICE
   weekdays: string[] = [
     'Sunday',
     'Monday',
@@ -24,6 +26,7 @@ export class CalendarService {
   calendar: Day[][];
   selectedDate: number | null;
 
+  //INITIALISATION DES PROPRIÉTÉS, VARIABLES
   constructor() {
     const currentDate = new Date();
     this.currentMonth = currentDate.getMonth();
@@ -33,6 +36,7 @@ export class CalendarService {
     this.selectedDate = null;
   }
 
+  //CETTE MÉTHODE PERMET DE RECUPERER LE MOIS PRECEDENT DU MOIS AFFICHÉ
   previousMonth() {
     this.currentMonth--;
     if (this.currentMonth < 0) {
@@ -43,7 +47,7 @@ export class CalendarService {
     this.calendar = this.generateCalendar(this.currentMonth, this.currentYear);
     this.selectedDate = null;
   }
-
+  //CETTE MÉTHODE PERMET DE RÉCUPERER LE MOIS SUIVANT DU MOIS AFFICHÉ
   nextMonth() {
     this.currentMonth++;
     if (this.currentMonth > 11) {
@@ -55,6 +59,7 @@ export class CalendarService {
     this.selectedDate = null;
   }
 
+  //CETTE MÉTHODE PERMET DE CRÉER LE CALENDRIER
   generateCalendar(month: number, year: number): Day[][] {
     const firstDayOfMonth = new Date(year, month, 1).getDay();
     const numDays = new Date(year, month + 1, 0).getDate();
@@ -88,6 +93,7 @@ export class CalendarService {
     return calendar;
   }
 
+  //CETTE MÉTHODE PERMET DE RECUPERER LES NOMS DES DIFFERENTS MOIS
   getMonthName(month: number): string {
     const monthNames = [
       'January',
