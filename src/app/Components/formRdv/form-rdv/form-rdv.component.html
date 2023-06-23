@@ -1,4 +1,4 @@
-<form  id="FormRdv" class="formRdv" [formGroup]="formRdv" (submit)="onSubmitted()"> 
+<form  id="FormRdv" class="formRdv" [formGroup]="rdvForm" (submit)="onSubmitted()"> 
 
     <h2>{{title}}</h2>
     <input type="text" name="rdvTitle" id="RdvTitle" class="rdvTitle" placeholder="Intitulé du rendez vous." required formControlName="rdvTitle"/>
@@ -22,7 +22,7 @@
     </div>
     
     <textarea name="descriptionRdv" id="DescriptionRdv" class="descriptionRdv" cols="30" rows="10" placeholder="Descriptif de votre Rendez-vous" formControlName="descriptionRdv"></textarea>
-
+  
     <div id="actionBar" class="actionBar">
         <button type="button" name="modifyRdv" id="ModifyRdv" class="button"> Modifications </button>
         <!-- Gèrer le type du button en fonction des var suivante : rdv déjà crer & utilisateur logger -> bouton de suppression -->
@@ -30,6 +30,4 @@
         <button type="button" name="DeleteRdv" id="DeleteRdv" class="button"> Suppression </button>
         <button type="submit" name="validationRdv" id="ValidationRdv" class="button"> Validation </button>
     </div>
-
-
 </form>
