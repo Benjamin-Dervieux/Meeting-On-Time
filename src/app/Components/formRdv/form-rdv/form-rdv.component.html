@@ -1,20 +1,20 @@
 <div class="formRdvContainer">
-  <form id="FormRdv" class="formRdv">
+  <form class="formRdv">
     <h2>{{ title }}</h2>
     <input
       type="text"
       name="rdvTitle"
       id="RdvTitle"
       class="rdvTitle"
-      placeholder="Intitulé du rendez vous."
+      placeholder="Appointment title"
       required
     />
 
-    <div id="ContainerSelectTime" class="containerSelectTime">
+    <div class="containerSelectTime">
       <!-- Devra se changer en DIV en simple affichage avec le retour des valeurs des plages horaires -->
 
       <div class="timeSlotDefine">
-        <label for="timeSlotStart">Début du créneau:</label>
+        <label for="timeSlotStart">Begining :</label>
         <input
           type="time"
           id="timeSlotStart"
@@ -26,7 +26,7 @@
       </div>
 
       <div class="timeSlotDefine">
-        <label for="timeSlotStart">Début du créneau:</label>
+        <label for="timeSlotStart">End :</label>
         <input
           type="time"
           id="timeSlotFinish"
@@ -38,7 +38,7 @@
       </div>
 
       <button type="button" name="selectfTime" id="SelectfTime" class="button">
-        Choix de l'Heure
+        Confirm time
       </button>
     </div>
 
@@ -48,15 +48,15 @@
       class="descriptionRdv"
       cols="30"
       rows="10"
-      placeholder="Descriptif de votre Rendez-vous"
+      placeholder="Appointment description"
     ></textarea>
 
-    <div id="actionBar" class="actionBar">
+    <div class="actionBar">
       <button type="button" name="modifyRdv" id="ModifyRdv" class="button">
-        Modifications
+        Update
       </button>
       <button type="button" name="DeleteRdv" id="DeleteRdv" class="button">
-        Suppression
+        Delete
       </button>
       <button
         type="button"
@@ -64,7 +64,7 @@
         id="ValidationRdv"
         class="button"
       >
-        Validation
+        Validate
       </button>
     </div>
   </form>
