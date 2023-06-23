@@ -1,5 +1,5 @@
 .mainLoginContainer {
-  height: 38rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,8 @@ h1 {
   color: #006494;
 }
 
-form {
+.formRdv {
+  width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,8 +34,6 @@ input {
 }
 
 button {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
   font-size: 17px;
   padding: 1em 2.7em;
   font-weight: 500;
