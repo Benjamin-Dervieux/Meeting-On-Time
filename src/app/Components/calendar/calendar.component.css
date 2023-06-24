@@ -2,16 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  min-width: 100vh;
   margin-right: 2rem;
 }
 
 .calendar {
-  width: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 80%;
   background-color: #fff;
   padding: 10px;
 }
@@ -23,6 +18,7 @@
   margin-bottom: 10px;
   color: #006494;
   font-size: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 .previousMonthBtn {
@@ -30,14 +26,19 @@
   background-color: white;
   margin-right: 3rem;
   cursor: pointer;
-  border: 0.5px solid #006494;
   border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .previousMonthBtn img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   transform: rotate(180deg);
+}
+
+.previousMonthBtn:active {
+  background-color: #006494;
 }
 
 .nextMonthBtn {
@@ -45,88 +46,68 @@
   background-color: white;
   margin-left: 3rem;
   cursor: pointer;
-  border: 0.5px solid #006494;
   border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .nextMonthBtn img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.nextMonthBtn:active {
+  background-color: #006494;
 }
 
 .weekdayContainer {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 10px;
   background-color: #f2f2f2;
-  width: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   padding: 10px;
 }
-
 
 .weekday {
   flex-basis: calc(100% / 7);
   text-align: center;
-  font-weight: bold;
   color: #006494;
   width: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: #ffa9a9;
+  background-color: #f7f7f7;
   padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .days {
   display: grid;
   grid-template: repeat(7, 1fr);
   width: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: #fff;
-  padding: 10px;
 }
 
 .week {
   display: flex;
-  flex-basis: calc(100% / 7);
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: #fff;
   padding: 10px;
 }
 
 .day {
-  width: 4rem; 
-  height: 7rem;
   display: flex;
   margin: 1.4rem;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 10px;
   width: 100%;
-  max-height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: #fff;
-  padding: 10px;
+  height: 9rem;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
