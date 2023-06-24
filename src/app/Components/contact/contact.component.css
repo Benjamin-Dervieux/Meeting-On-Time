@@ -33,6 +33,11 @@ h2 {
   width: 10rem;
 }
 
+li {
+  list-style-type: none;
+  text-decoration: underline;
+}
+
 .githubLogo {
   width: 4rem;
 }
