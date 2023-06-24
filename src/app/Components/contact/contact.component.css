@@ -10,11 +10,32 @@ h2 {
   font-size: 3rem;
 }
 
-.liContainer {
+.listContainer {
+  width: 70rem;
+}
+
+.mainLiContainer {
   display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.liContainer {
+  width: 15rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
-img {
-  width: 5rem;
+.photo {
+  width: 10rem;
+}
+
+p {
+}
+
+.githubLogo {
+  width: 4rem;
 }
