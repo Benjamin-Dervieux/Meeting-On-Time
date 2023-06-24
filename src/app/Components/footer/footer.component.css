@@ -1,6 +1,7 @@
 .mainFooterContainer {
-  position: relative;
-  bottom: 0.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: #0582ca;
   color: white;
@@ -22,34 +23,10 @@
   margin-left: 1rem;
   color: white;
   text-decoration: none;
-  transition: color 0.7s ease; 
+  transition: color 0.7s ease;
 }
 
 .right-section a:hover {
   text-decoration: underline;
-  color: #fcce00; 
-}
-
-.right-section a:active {
-  color: black;
-}
-
-.footer:before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background-color: #0582ca;
-}
-
-.footer:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background-color: #0582ca;
+  color: #006494;
 }
