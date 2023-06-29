@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D44CC70D-54D6-3D34-9814-F2F2ACBAFF71" mainViewID="4FD3E427-42E5-E7C2-CFF7-5B1F178823B0">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:25:19 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
