@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="626A7061-B3B6-E63A-0421-042747292AE7" name="USER">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:46:38 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>U</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="7BA79F6A-0B7A-B080-8416-1497454CCFB1">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:47:00 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="CB227EB2-55E1-1C45-D8DA-6FA632BDBDB7">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:47:19 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="A98EFE13-6072-E0E7-FEE4-64ECBFD8ECF3">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:47:52 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="n_phone" id="03DA54DC-C469-D9FA-7FB0-C4E398BFD99B">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:48:08 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mail" id="97AE4F5B-1601-F377-A79F-852F4384A2F1">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:48:32 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_created" id="F2F29450-093E-DEA1-BEB3-D9FDFB5A359C">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:48:49 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="713DA845-F48E-A85E-94BD-24BD907A483A" name="USER PK">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:47:14 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7BA79F6A-0B7A-B080-8416-1497454CCFB1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="980E9711-48F1-24D4-7FBC-2D87122DE98B" name="PERMISSION">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 14:00:29 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PERM</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="225AA4D4-8819-DF83-D213-7BB181C53612">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 14:00:45 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="E1F3517D-3DD4-27CD-9858-9B88B00537B7">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 14:00:56 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2549535B-4D92-FEFD-2E3F-8AE115C07FD8" name="PERMISSION PK">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 14:00:54 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>225AA4D4-8819-DF83-D213-7BB181C53612</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

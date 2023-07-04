@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0477EC49-DC65-AA05-EBB5-9DB94B9D5FBD" name="RENDEZ VOUS">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:49:18 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>RDV</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="CE08B079-C60B-4B43-E6FA-904BA058C91E">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:49:37 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_created" id="BE781266-7725-2791-86C1-FC5E41482DC0">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:49:52 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="time_rdv_start" id="415737E0-E099-8F50-6553-108186F002C0">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:50:24 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="time_rdv_end" id="1D336983-09D8-39BA-1114-B5B1A75D17DC">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:50:43 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="content" id="8C7C631F-3355-9DEA-0B00-92B86106BC72">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:51:02 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2794D935-3074-DFCF-C0BA-61486BCD48C5" name="RENDEZ VOUS PK">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 13:49:48 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE08B079-C60B-4B43-E6FA-904BA058C91E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
