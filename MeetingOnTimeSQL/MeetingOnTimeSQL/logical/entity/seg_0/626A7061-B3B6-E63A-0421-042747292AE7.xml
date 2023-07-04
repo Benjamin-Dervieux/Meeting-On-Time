@@ -35,7 +35,6 @@
 <engineerTo>
 <item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -49,7 +48,6 @@
 <engineerTo>
 <item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -63,7 +61,6 @@
 <engineerTo>
 <item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -77,12 +74,24 @@
 <engineerTo>
 <item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="B9FF80E1-96C3-2056-FE97-74E75DA16E3D">
+<createdBy>k3nt</createdBy>
+<createdTime>2023-06-29 14:11:49 UTC</createdTime>
+<ownerDesignName>MeetingOnTimeSQL</ownerDesignName>
+<engineerTo>
+<item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dt_created" id="F2F29450-093E-DEA1-BEB3-D9FDFB5A359C">
 <createdBy>k3nt</createdBy>
@@ -91,7 +100,6 @@
 <engineerTo>
 <item key="EF1A74E1-8E4E-92CC-C97E-691E8DDA9BB7" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT008</logicalDatatype>

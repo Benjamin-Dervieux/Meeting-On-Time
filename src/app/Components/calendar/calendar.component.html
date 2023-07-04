@@ -1,5 +1,6 @@
 <div class="mainCalendarContainer">
   <div class="calendar">
+
     <div class="header">
       <button
         class="previousMonthBtn"
@@ -14,6 +15,7 @@
         <img src="../../../assets/images/next.png" alt="next arrow" />
       </button>
     </div>
+    
     <div class="weekdayContainer">
       <div class="weekday" *ngFor="let weekday of calendarService.weekdays">
         {{ weekday }}
